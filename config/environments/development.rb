@@ -26,4 +26,18 @@ Rails4SampleApp::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
+
+  # ...or, change some options...
+
+  # config.middleware.insert_before(
+  #   Rack::Lock, Rack::LiveReload,
+  #   :min_delay => 500,
+  #   :max_delay => 10000,
+  #   :port => 56789,
+  #   :host => 'localhost:3000',
+  #   :ignore => [ %r{dont/modify\.html$} ]
+  # )
+  
 end

@@ -4,6 +4,7 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.0'
 gem 'pg', '0.15.1'
+gem 'bootstrap-sass', '2.3.2.0'
 
 group :development, :test do
 	gem 'rspec-rails', '2.13.1'
@@ -11,6 +12,9 @@ group :development, :test do
 	gem 'spork-rails', github: 'sporkrb/spork-rails'
 	gem 'guard-spork', '1.5.0'
 	gem 'childprocess', '0.3.9' # The bundle currently has childprocess locked at 0.3.9.
+	gem 'guard-livereload', require: false
+	gem 'rack-livereload'
+	gem 'rb-fsevent', require: false
 end
 
 group :test do
