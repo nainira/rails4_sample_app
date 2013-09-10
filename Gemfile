@@ -19,10 +19,11 @@ group :development, :test do
 end
 
 group :test do
-	gem 'selenium-webdriver', '2.0.0'
+	gem 'selenium-webdriver', '~>2.35.1'
 	gem 'capybara', '2.1.0'
 	gem 'growl', '1.0.3'
 	gem 'sqlite3', '1.3.7'
+	gem 'factory_girl_rails', '4.2.1'
 end
 
 gem 'sass-rails', '4.0.0'
